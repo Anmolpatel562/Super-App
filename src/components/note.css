@@ -1,0 +1,9 @@
+.notesInput{
+    background-color: #F1C75B;
+    height: 50vh;
+    width: 100%;
+    border: none;
+    margin-top: .8rem;
+    max-width: 18vw;
+    max-height: 40vh;
+}

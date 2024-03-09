@@ -1,0 +1,34 @@
+.pink{
+    background-color: #FF4ADE;
+    height: 36px;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: .5rem;
+    padding-right: .5rem;
+}
+
+.rain{
+   border-right: 2px solid gray;
+}
+.temp{
+    border-right: 2px solid gray ;
+}
+
+.celcious{
+    font-size: 30px;
+    font-weight: 600;
+}
+.weatherDetails{
+    display: flex;
+    margin-top: 20px;
+}
+.weatherBoxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 150px;
+    margin: auto;
+}

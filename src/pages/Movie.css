@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.wrapper{
+    background-color: black;
+    width: 100vw;
+    height: 800px;
+}
+.itemBox{
+    display: grid;
+    grid-template-columns: 9.5rem 9.5rem 9.5rem;
+    gap: 1rem;
+    text-align: center;
+    margin-left :1rem ;
+    margin-top: 1rem;
+}
+.movie{
+    display: flex; 
+    justify-content: space-around; 
+    padding-top: 3rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.filterBox{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.nextbtn{
+    margin-right: 9rem;
+    margin-top: 2rem;
+    float: right;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #148A08;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+.super{
+  font-family: "Single Day", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #72db73;
+  font-size: 65px;
+}
+.choose{
+    font-size: 35px
+}
+.chips{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    gap: 10px;
+}

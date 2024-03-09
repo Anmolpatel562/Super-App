@@ -1,0 +1,19 @@
+.box{
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+.title{
+   align-self: flex-start;
+   margin-left: 0.72rem;
+   margin-top: 0.2rem;
+   color: #FFFFFF;
+   font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}

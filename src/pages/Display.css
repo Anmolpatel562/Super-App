@@ -1,0 +1,74 @@
+.display{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr .8fr .8fr;
+    grid-template-rows: .5fr .5fr .7fr .8fr;
+    gap: 1rem;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+}
+
+.header{
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    background-color: #5746EA; 
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.footer{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: #101744;
+    border-radius: 1.5rem;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.note{
+    width: 90%;
+    height: 100%;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: #F1C75B;
+    border-radius: 1.5rem;
+    margin: auto;
+    padding: 1.5rem;
+    color: black;
+}
+.mountain{
+    background-color: white;
+    width: 95%;
+    height: 100%;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    border-radius: 1.5rem;
+}
+.stopwatch{
+    width: 97.5%;
+    height: 100%;
+    background-color: #1E2343;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 1.5rem;
+}
+.browseBtn{
+    grid-column: 4/3;
+    width: 150px;
+    margin: auto;
+    height: 30px;
+    margin-right: 6%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #148A08;
+    color: white;
+    font-weight: 600;
+}

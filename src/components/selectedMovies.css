@@ -1,0 +1,9 @@
+.movieChip{
+    font-size: 12px;
+    background-color: #9F94FF;
+    text-align: center;
+    padding: 5px;
+    height: 25px;
+    border-radius: 20px;
+    width: 80px;
+}

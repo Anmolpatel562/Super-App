@@ -1,0 +1,12 @@
+.chip{
+    background-color: #148A08;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.x{
+    color: rgb(60, 59, 59);
+}
