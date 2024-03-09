@@ -6,7 +6,7 @@ import "./Display.css";
 import Weather from '../components/Weather';
 import Mountain from '../components/Mountain';
 import Note  from "../components/Note";
-import UrgeWithPleasureComponent from "../components/CountdownCircleTimer"
+
 
 
 
@@ -33,7 +33,7 @@ function Display() {
           <Weather/>
         </div>
         <div className="stopwatch">
-          <UrgeWithPleasureComponent/>
+
         </div>
       
        <button className="browseBtn" onClick={browseHandler}>
