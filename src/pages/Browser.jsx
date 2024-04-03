@@ -1,13 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-function Browser() {
+import MovieList from "../components/MovieList";
+
+export default function Browser() {
   return (
-    <div>
-      <h2>Hello i am Browser</h2>
-      <Link to="/">Back to home</Link>
-    </div>
-  )
+    <>
+      <MovieList />
+    </>
+  );
 }
 
-export default Browser

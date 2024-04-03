@@ -1,0 +1,52 @@
+.timerContainer{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.timer{
+    /* box-shadow: inset 0 0 20px;
+    width: 100%;
+    height: 100%; */
+    padding-left: 20px;
+    
+}
+.time{
+      display: flex;
+      gap: .5rem;
+      color: white;
+}
+.buttons{
+    display: flex;
+    gap: .5rem;
+}
+.seconds{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.hours{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.minutes{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.btn{
+    width: 80px;
+    height: 25px;
+    cursor: pointer;
+    background-color: rgb(187, 144, 187);
+    border: none;
+    border-radius: 10px;
+}
+.playbtn{
+    width: 140px;
+    height: 40px;
+    background-color:  orange;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}

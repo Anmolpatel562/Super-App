@@ -1,0 +1,32 @@
+.usericon{
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    border: 3px solid rgb(124, 121, 121);
+}
+.movieListContainer{
+    background-color: black;
+    color: white;
+}
+
+.headingInfo{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.entertainment{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.app{
+    font-family: "Single Day", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #72db73;
+    font-size: 55px;
+}
+.paraInfo{
+    font-size: 25px;
+}

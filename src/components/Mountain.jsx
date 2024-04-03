@@ -5,6 +5,7 @@ import {useState,useEffect} from 'react';
 
 function Mountain(){
     const [news,setNews] = useState(null);
+    const [index,setIndex] = useState(null);
 
     function fetchNews(){
         // axios.get("https://newsapi.org/v2/everything?q=tesla&from=2024-02-05&sortBy=publishedAt&apiKey=0dc6223e1fd040c78669cc6ef79e2d4a")
@@ -25,14 +26,14 @@ function Mountain(){
         }).catch((error)=>{
             console.log(error);
         })
+        setIndex(Math.floor(Math.random() * 19));
     },[]);
-    var index = Math.floor(Math.random() * 19);
-
+    
     return (
         <div className='mountainDescriptionContainer'>
              {news?<img className='mountainImg' src={news.articles[index].urlToImage}></img>:<></>}
              {news?<h1 className='blackBox'>{news.articles[index].title}</h1>:<></>}
-             {news?<p className='desc'>{news.articles[index].description.slice(0,700)}...</p>:<></>}
+             {news?<p className='desc'>{news.articles[index].description}...</p>:<></>}
         </div>
     )
 }

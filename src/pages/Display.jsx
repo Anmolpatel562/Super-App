@@ -1,21 +1,24 @@
 import React from "react";
 import { useState } from 'react'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import UserInfo from "../components/UserInfo";
 import "./Display.css";
 import Weather from '../components/Weather';
 import Mountain from '../components/Mountain';
 import Note  from "../components/Note";
+import Timer from "../components/Timer";
 
 
 
 
 function Display() {
   const [note,setNote] = useState(null);
+  const navigate = useNavigate();
   const browseHandler = ()=>{
     if(note !== null){
       localStorage.setItem("Note",note);
     } 
+    navigate('/browser');
   }
   
   return (
@@ -33,9 +36,8 @@ function Display() {
           <Weather/>
         </div>
         <div className="stopwatch">
-
+          <Timer/>
         </div>
-      
        <button className="browseBtn" onClick={browseHandler}>
         Browse
        </button>
