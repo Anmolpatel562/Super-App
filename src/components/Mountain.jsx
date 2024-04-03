@@ -17,7 +17,8 @@ function Mountain(){
         //})
     }
     useEffect(()=>{
-        fetch("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=0dc6223e1fd040c78669cc6ef79e2d4a").then(
+        // fetch("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=0dc6223e1fd040c78669cc6ef79e2d4a")
+        fetch("https://api.worldnewsapi.com/search-news?text=cricket&language=en&api-key=e4504c2b21f6411f8ad0697d9ff579fe").then(
             (res)=>{
                 return res.json();
             }
@@ -31,9 +32,13 @@ function Mountain(){
     
     return (
         <div className='mountainDescriptionContainer'>
+            {/* {}
              {news?<img className='mountainImg' src={news.articles[index].urlToImage}></img>:<></>}
              {news?<h1 className='blackBox'>{news.articles[index].title}</h1>:<></>}
-             {news?<p className='desc'>{news.articles[index].description}...</p>:<></>}
+             {news?<p className='desc'>{news.articles[index].description}...</p>:<></>} */}
+             {news ? <img width={350} height={260} src={news.news[3].image} /> : <></>}
+             {news ? <h1 style={{backgroundColor:"black",color:"white",padding:"1rem",fontSize:"20px"}}>{news.news[3].title}</h1> : <></>}
+      {news ? <p style={{padding:"1rem"}}>{news.news[3].text.slice(0, 300)}...</p> : <></>}
         </div>
     )
 }
